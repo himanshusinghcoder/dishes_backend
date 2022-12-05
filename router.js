@@ -5,7 +5,7 @@ import { handleError } from './middlewares/error.js';
 const router = express.Router()
 
 
-router.get('/',(req,res) => res.send({status: 'success'})
+router.get('/', (req,res) => {res.json({status: 'success'})})
 
 router.get('/get_all_dishes',handleError(getAllDishes))
 
